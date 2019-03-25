@@ -72,7 +72,7 @@ module.exports = {
   },
 
   getFormattedHtml(content) {
-    const html = prettify.html(content, {
+    const html = prettify.html(content(), {
       indent_char: '\t',
       indent_size: 1,
     });
